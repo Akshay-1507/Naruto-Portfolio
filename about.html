@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            transition: transform 0.5s ease; /* Transition for the main element */
+            color: white; /* Default text color */
+        }
+
+        .block1 {
+            display: flex;
+            margin-top: 10px;
+            flex-direction: row; /* Default to row direction */
+            align-items: center; /* Center items vertically */
+        }
+
+        .aboutme p {
+            color: white;
+            font-size: 35px;
+            margin-left: 15px;
+        }
+
+        .aboutme h2 {
+            color: orange;
+            margin-left: 25px;
+            font-size: 35px;
+        }
+
+        .head1 h1 {
+            color: orange;
+            margin-left: 555px;
+            font-size: 75px;
+        }
+
+        .image1 img {
+            width: 250px;
+            margin-left: 25px;
+        }
+
+        .slide-out {
+            transform: translateX(-100%); /* Slide out to the left */
+        }
+
+        .slide-in {
+            transform: translateX(100%); /* Slide in from the right */
+        }
+
+        .ramp {
+            margin-top: 20px; /* Add margin to ramp */
+            text-align: center; /* Center the ramp */
+        }
+
+        .transition-link {
+            color: orange; /* Link color */
+            font-size: 25px; /* Link font size */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /* Add some padding */
+            border: 2px solid orange; /* Border around the link */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Background color transition */
+        }
+
+        .transition-link:hover {
+            background-color: orange; /* Change background color on hover */
+            color: black; /* Change text color on hover */
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .head1 h1 {
+                margin-left: 20px; /* Reduce margin for small screens */
+                font-size: 40px; /* Smaller font size for heading */
+                text-align: center; /* Center the heading */
+            }
+
+            .block1 {
+                flex-direction: column; /* Stack elements vertically */
+                align-items: center; /* Center items */
+            }
+
+            .aboutme p,
+            .aboutme h2 {
+                font-size: 28px; /* Smaller font size for text */
+                margin-left: 0; /* Remove left margin */
+                text-align: center; /* Center text */
+            }
+
+            .image1 img {
+                width: 200px; /* Reduce image size */
+                margin-left: 0; /* Remove left margin */
+            }
+
+            .transition-link {
+                font-size: 20px; /* Smaller font size for the link */
+                padding: 8px 16px; /* Reduce padding for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .head1 h1 {
+                font-size: 30px; /* Smaller font size for very small screens */
+            }
+
+            .aboutme p,
+            .aboutme h2 {
+                font-size: 24px; /* Further reduce font size */
+            }
+
+            .image1 img {
+                width: 150px; /* Further reduce image size */
+            }
+
+            .transition-link {
+                font-size: 18px; /* Further reduce font size for the link */
+                padding: 6px 12px; /* Further reduce padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="head1">
+        <h1>About Me!</h1>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="R (4).jpeg" alt="Naruto Image">
+        </section>
+        <section class="aboutme">
+            <h2>Intro</h2>
+            <p>Naruto Uzumaki is the main protagonist of the anime and manga series "Naruto," created by Masashi Kishimoto. He is known for his strong will, determination, and desire to become the strongest ninja and leader of his village, the Hidden Leaf Village (Konoha).</p>
+        </section>
+    </section>
+    <section class="block1">
+        <section class="aboutme">
+            <h2>Favourite Food</h2>
+            <p>Naruto's favorite food is ramen, particularly from the Ichiraku Ramen shop in Konoha. He has an insatiable appetite and often indulges in large bowls of ramen, showcasing his love for the dish throughout the series.</p>
+        </section>
+        <section class="image1">
+            <img src="58cb186c4c0e59f81b68ffd6c5e3bc64.png" alt="Ramen Image">
+        </section>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="OIP.jpeg" alt="Hinata Image">
+        </section>
+        <section class="aboutme">
+            <h2>Wife</h2>
+            <p>Naruto is married to Hinata Hyuga, a kind and gentle ninja from the Hyuga clan. Their relationship develops over the series, and they eventually fall in love. Hinata's unwavering support and belief in Naruto play a significant role in his growth as a character.</p>
+        </section>
+    </section>
+    <section class="block1">
+        <section class="aboutme">
+            <h2>Children</h2>
+            <p>Naruto and Hinata have two children:<br>
+                Boruto Uzumaki: Their eldest son, who is the protagonist of the sequel series "Boruto: Naruto Next Generations." Boruto initially struggles with living up to his father's legacy but eventually carves his own path as a ninja.<br>
+                Himawari Uzumaki: Their younger daughter, who is cheerful and loving. Though she has a more minor role in the series, her bond with her family is highlighted.
+            </p>
+        </section>
+        <section class="image1">
+            <img src="OIP (1).jpeg" alt="Boruto and Himawari Image">
+        </section>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="naruto-5777376_1280.webp" alt="Naruto Hokage Image">
+        </section>
+        <section class="aboutme">
+            <h2>Ninja Rank</h2>
+            <p>Naruto eventually becomes the Seventh Hokage of the Hidden Leaf Village. His journey from being an outcast to the leader of his village is a central theme in the series. He strives to protect his village and promote peace among all shinobi.</p>
+        </section>
+    </section>
+    
+    <div class="ramp">
+        <a href="one.html" class="transition-link">My Achievements</a>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.transition-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+                const href = this.getAttribute('href'); // Get the href attribute
+                
+                // Add the slide-out class to the body
+                document.body.classList.add('slide-out');
+
+                // Wait for the animation to complete before navigating
+                setTimeout(() => {
+                    window.location.href = href; // Navigate to the new page
+                }, 500); // Duration should match the CSS transition time
+            });
+        });
+    </script>
+</body>
+</html>

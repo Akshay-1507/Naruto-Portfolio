@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            transition: transform 0.5s ease; /* Transition for the main element */
+        }
+
+        .block1 {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .aboutme p {
+            color: white;
+            font-size: 35px;
+            margin-left: 15px;
+        }
+
+        .aboutme h2 {
+            color: orange;
+            margin-left: 25px;
+            font-size: 35px;
+        }
+
+        .head1 h1 {
+            color: orange;
+            margin-left: 555px;
+            font-size: 75px;
+        }
+
+        .image1 img {
+            width: 250px;
+            margin-left: 25px;
+        }
+
+        .slide-out {
+            transform: translateX(-100%); /* Slide out to the left */
+        }
+
+        .slide-in {
+            transform: translateX(100%); /* Slide in from the right */
+        }
+
+        .ramp {
+            margin-top: 20px; /* Add margin to ramp */
+            text-align: center; /* Center the ramp */
+        }
+
+        .transition-link {
+            color: orange; /* Link color */
+            font-size: 25px; /* Link font size */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /* Add some padding */
+            border: 2px solid orange; /* Border around the link */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Background color transition */
+        }
+
+        .transition-link:hover {
+            background-color: orange; /* Change background color on hover */
+            color: black; /* Change text color on hover */
+        }
+
+        /* Media queries for mobile devices */
+        @media (max-width: 768px) {
+            .block1 {
+                flex-direction: column; /* Stack the content vertically */
+                align-items: center; /* Center items */
+            }
+
+            .head1 h1 {
+                margin-left: 0; /* Remove left margin for heading */
+                font-size: 40px; /* Smaller font size */
+                text-align: center; /* Center text */
+            }
+
+            .aboutme p,
+            .aboutme h2 {
+                font-size: 20px; /* Smaller font size */
+                margin-left: 0; /* Remove left margin */
+                text-align: center; /* Center text */
+                padding: 0 10px; /* Add padding for better readability */
+            }
+
+            .image1 img {
+                width: 80%; /* Responsive image size */
+                margin-left: 0; /* Remove left margin */
+                margin-bottom: 15px; /* Space below images */
+            }
+
+            .transition-link {
+                font-size: 20px; /* Smaller font size */
+                padding: 8px 15px; /* Adjust padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="head1">
+        <h1>My Skills:</h1>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="https://th.bing.com/th/id/R.2d2e1b63aaaeb8179ba7559b4a2705c4?rik=FVC5b7i79I8p2w&riu=http%3a%2f%2fimg14.deviantart.net%2f513e%2fi%2f2016%2f289%2f0%2f4%2fnaruto___rasen_shuriken_by_caru_ra-dal5wqz.jpg&ehk=%2bejG2RkCx6mFxECBJOCr8IZl9K3xjVId6ILXoir3Gow%3d&risl=&pid=ImgRaw&r=0" alt="Wind Release Image">
+        </section>
+        <section class="aboutme">
+            <h2>1. Shuriken</h2>
+            <p>One of the more basic weapons seen in the Naruto series. They are sharpened, four-pronged metal stars, useful for throwing. They can also be used for close combat, but not very efficiently. Although small, they can be used to distract, pin down enemy shinobi, or, if accurate enough, kill or incapacitate an enemy.</p>
+        </section>
+    </section>
+    <section class="block1">
+        <section class="aboutme">
+            <h2>2. Sage Mode</h2>
+            <p>Naruto mastered Sage Mode, allowing him to sense natural energy, enhance his physical abilities, and access powerful techniques.</p>
+        </section>
+        <section class="image1">
+            <img src="https://th.bing.com/th/id/OIP._SVVVE-nh98euhrY-YtsWwHaF9?rs=1&pid=ImgDetMain" alt="Naruto Sage Mode Image">
+        </section>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="https://th.bing.com/th/id/OIP.OxCZdwIR_iZuLf2d0xTiigHaGd?rs=1&pid=ImgDetMain" alt="Shadow Clone Technique Image">
+        </section>
+        <section class="aboutme">
+            <h2>3. Shadow Clone Technique</h2>
+            <p>Naruto is proficient in the Shadow Clone Technique, allowing him to create multiple copies of himself for combat and strategy.</p>
+        </section>
+    </section>
+    <section class="block1">
+        <section class="aboutme">
+            <h2>4. Rasengan and Its Variants</h2>
+            <p>Naruto created multiple variations of the Rasengan, showcasing his creativity and mastery of chakra manipulation in combat.</p>
+        </section>
+        <section class="image1">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/5-naruto-rasengan-nguyen-hai.jpg" alt="Rasengan Image">
+        </section>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="https://th.bing.com/th/id/R.3802d890150f98e6db33ea8bf76faf2d?rik=RWT02gqa2baVPQ&riu=http%3a%2f%2fpre10.deviantart.net%2f7fb8%2fth%2fpre%2ff%2f2014%2f038%2fe%2f3%2fnaruto_sage_bijuu_mode_and_kurama_by_marttist-d75i5mp.png&ehk=xc4eM8ye6bIymNiBrOL7558O4jRQqfZT%2bpVDFBme2Sc%3d&risl=&pid=ImgRaw&r=0" alt="Kurama Image">
+        </section>
+        <section class="aboutme">
+            <h2>5. Tailed Beast Transformation</h2>
+            <p>Naruto learned to control Kurama's chakra, allowing him to tap into the immense power of the Nine-Tails during battles.</p>
+        </section>
+    </section>
+
+    <div class="ramp">
+        <a href="messgae.html" class="transition-link">Hire Me!</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.transition-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+                const href = this.getAttribute('href'); // Get the href attribute
+                
+                // Add the slide-out class to the body
+                document.body.classList.add('slide-out');
+
+                // Wait for the animation to complete before navigating
+                setTimeout(() => {
+                    window.location.href = href; // Navigate to the new page
+                }, 500); // Duration should match the CSS transition time
+            });
+        });
+    </script>
+</body>
+</html>

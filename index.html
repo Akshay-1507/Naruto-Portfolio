@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="main">
+        <section class="section1">
+            <section class="logo">
+                <!-- Uncomment and add logo image source if needed -->
+                <!-- <img src="8defbbe57881704dd490eb7852f3e3f5.jpg" alt="Logo"> -->
+            </section>
+            <section class="title1">
+                <h1>NARUTO うずまき</h1>
+            </section>
+        </section>
+
+        <section class="section2">
+            <section class="image">
+                <img src="HD-wallpaper-naruto-bnw-all-black.jpg" alt="Naruto Image">
+            </section>
+            <section class="information1">
+                <h1>Hello, I'M <br><span class="spam1">Naruto Uzumaki</span></h1>
+                <h2>The 7th Hokage of the<br><span class="spam2">Hidden Leaf Village</span></h2>
+                <h3>Check Me Out!</h3>
+                
+                <div class="icon-container">
+                    <a href="https://www.aniplexusa.com" class="icon" target="_blank" title="Aniplex">
+                        <i class="fab fa-aniplex"></i> Aniplex
+                    </a>
+                    <a href="https://www.crunchyroll.com" class="icon" target="_blank" title="Crunchyroll">
+                        <i class="fab fa-crunchyroll"></i> Crunchyroll
+                    </a>
+                    <a href="https://www.funimation.com" class="icon" target="_blank" title="Funimation">
+                        <i class="fab fa-funimation"></i> Funimation
+                    </a>
+                </div>
+                <div class="ramp">
+                <a href="about.html" class="transition-link">ABOUT ME</a>
+            </div>
+            </section>
+        </section>
+       
+    </section>
+
+    <script>
+        document.querySelectorAll('.transition-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+                const href = this.getAttribute('href'); // Get the href attribute
+                
+                // Add the slide-out class to the main content
+                document.querySelector('.main').classList.add('slide-out');
+
+                // Wait for the animation to complete before navigating
+                setTimeout(() => {
+                    window.location.href = href; // Navigate to the new page
+                }, 500); // Duration should match the CSS transition time
+            });
+        });
+    </script>
+</body>
+</html>

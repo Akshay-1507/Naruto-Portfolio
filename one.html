@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            transition: transform 0.5s ease; /* Transition for the main element */
+        }
+
+        .block1 {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .aboutme p {
+            color: white;
+            font-size: 35px;
+            margin-left: 15px;
+        }
+
+        .aboutme h2 {
+            color: orange;
+            margin-left: 25px;
+            font-size: 35px;
+        }
+
+        .head1 h1 {
+            color: orange;
+            margin-left: 555px;
+            font-size: 75px;
+        }
+
+        .image1 img {
+            width: 250px;
+            margin-left: 25px;
+        }
+
+        .slide-out {
+            transform: translateX(-100%); /* Slide out to the left */
+        }
+
+        .slide-in {
+            transform: translateX(100%); /* Slide in from the right */
+        }
+
+        .ramp {
+            margin-top: 20px; /* Add margin to ramp */
+            text-align: center; /* Center the ramp */
+        }
+
+        .transition-link {
+            color: orange; /* Link color */
+            font-size: 25px; /* Link font size */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /* Add some padding */
+            border: 2px solid orange; /* Border around the link */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Background color transition */
+        }
+
+        .transition-link:hover {
+            background-color: orange; /* Change background color on hover */
+            color: black; /* Change text color on hover */
+        }
+
+        /* Media queries for mobile devices */
+        @media (max-width: 768px) {
+            .block1 {
+                flex-direction: column; /* Stack the content vertically */
+                align-items: center; /* Center items */
+            }
+
+            .head1 h1 {
+                margin-left: 0; /* Remove left margin for heading */
+                font-size: 40px; /* Smaller font size */
+                text-align: center; /* Center text */
+            }
+
+            .aboutme p,
+            .aboutme h2 {
+                font-size: 20px; /* Smaller font size */
+                margin-left: 0; /* Remove left margin */
+                text-align: center; /* Center text */
+            }
+
+            .image1 img {
+                width: 80%; /* Responsive image size */
+                margin-left: 0; /* Remove left margin */
+                margin-bottom: 15px; /* Space below images */
+            }
+
+            .transition-link {
+                font-size: 20px; /* Smaller font size */
+                padding: 8px 15px; /* Adjust padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="head1">
+        <h1>My Achievements:</h1>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="https://wallpapercave.com/wp/wp1952646.jpg" alt="Naruto vs Pain Image">
+        </section>
+        <section class="aboutme">
+            <h2>1. Defeating Pain</h2>
+            <p>Naruto faced Pain, the leader of the Akatsuki, in a fierce battle that showcased his growth as a ninja. Using his Sage Mode and the power of his friends, he was able to overcome Pain and restore peace to the Hidden Leaf Village.</p>
+        </section>
+    </section>
+    <section class="block1">
+        <section class="aboutme">
+            <h2>2. Becoming Hokage</h2>
+            <p>After years of hard work, Naruto achieved his dream of becoming the Seventh Hokage, leading the village and earning the respect of his peers and former rivals.</p>
+        </section>
+        <section class="image1">
+            <img src="https://th.bing.com/th/id/OIP.oBWqMwksq1bE4GIJ2W_sjgHaLH?rs=1&pid=ImgDetMain" alt="Naruto as Hokage Image">
+        </section>
+    </section>
+    <section class="block1">
+        <section class="image1">
+            <img src="https://th.bing.com/th/id/OIP.cKPQ0uvUSLSWm6qGFd12NwHaMs?rs=1&pid=ImgDetMain" alt="Naruto Sage Mode Image">
+        </section>
+        <section class="aboutme">
+            <h2>3. Mastering Sage Mode</h2>
+            <p>Naruto trained under Fukasaku and Shima at Mount Myoboku to master Sage Mode, allowing him to harness natural energy, enhance his physical abilities, and gain powerful techniques like the Frog Kumite.</p>
+        </section>
+    </section>
+    <section class="block1">
+        <section class="aboutme">
+            <h2>4. Defeating Sasuke Uchiha</h2>
+            <p>In their final battle at the Valley of the End, Naruto fought Sasuke, showing how much they had both grown and changed, ultimately bringing an end to their rivalry.</p>
+        </section>
+        <section class="image1">
+            <img src="https://wallpapercave.com/wp/wp3483305.jpg" alt="Naruto and Sasuke Image">
+        </section>
+    </section>
+    
+    <section class="block1">
+        <section class="image1">
+            <img src="https://wallpapers.com/images/file/naruto-smile-peace-h5qtf2ipyg5lfsdf.jpg" alt="Naruto and Friends Image">
+        </section>
+        <section class="aboutme">
+            <h2>5. Legacy of Peace</h2>
+            <p>Naruto’s achievements laid the foundation for a more peaceful era in the ninja world, where former enemies could coexist and collaborate for a better future.</p>
+        </section>
+    </section>
+
+    <div class="ramp">
+        <a href="two.html" class="transition-link">My Skills</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.transition-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+                const href = this.getAttribute('href'); // Get the href attribute
+                
+                // Add the slide-out class to the body
+                document.body.classList.add('slide-out');
+
+                // Wait for the animation to complete before navigating
+                setTimeout(() => {
+                    window.location.href = href; // Navigate to the new page
+                }, 500); // Duration should match the CSS transition time
+            });
+        });
+    </script>
+</body>
+</html>

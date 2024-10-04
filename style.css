@@ -1,0 +1,156 @@
+/* CSS styles for transition effect and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; /* Set background color */
+}
+
+.main {
+    position: relative; /* Position relative for child elements */
+    transition: transform 0.5s ease; /* Transition effect for slide-out */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.slide-out {
+    transform: translateX(-100%); /* Slide out to the left */
+}
+
+.section1 {
+    display: flex;
+    align-items: center; /* Center logo and title vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100px; /* Height for the section */
+}
+
+.logo img {
+    width: 155px; /* Logo image width */
+}
+
+.title1 h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Center vertically */
+    height: calc(100vh - 100px); /* Fill remaining height */
+}
+
+.image img {
+    width: 350px; /* Image width */
+    margin-right: 50px; /* Space between image and text */
+}
+
+.information1 {
+    color: white; /* Text color */
+    text-align: left; /* Align text left */
+}
+
+.information1 h1,
+.information1 h2,
+.information1 h3 {
+    margin-bottom: 20px; /* Space between headings */
+    font-size: 35px;
+}
+
+.spam1,
+.spam2 {
+    color: rgb(255, 165, 0); /* Orange color for highlighted text */
+}
+
+.icon-container {
+    margin-top: 20px; /* Space above icons */
+}
+
+.icon {
+    display: inline-flex; /* Aligns icon and text horizontally */
+    align-items: center; /* Centers the icon and text vertically */
+    font-size: 24px; /* Size of the icons */
+    color: #ffffff; /* Default icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    margin-right: 15px; /* Space between icons */
+}
+
+.icon:hover {
+    color: rgb(255, 165, 0); /* Change icon color on hover */
+}
+
+.transition-link {
+    color: orange; /* Link color */
+    font-size: 25px; /* Link font size */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding */
+    border: 2px solid orange; /* Border around the link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Background color transition */
+}
+
+.transition-link:hover {
+    background-color: orange; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+.ramp {
+    margin-top: 20px; /* Space above ramp link */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .section1 {
+        flex-direction: column; /* Stack logo and title vertically */
+        height: auto; /* Allow height to adjust automatically */
+    }
+
+    .title1 h1 {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .section2 {
+        flex-direction: column; /* Stack image and information vertically */
+        height: auto; /* Allow height to adjust automatically */
+    }
+
+    .image img {
+        width: 80%; /* Make the image responsive */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+
+    .information1 h1,
+    .information1 h2,
+    .information1 h3 {
+        font-size: 28px; /* Reduce font size for smaller screens */
+    }
+
+    .icon {
+        font-size: 20px; /* Smaller icon size */
+    }
+
+    .transition-link {
+        font-size: 20px; /* Smaller link font size */
+    }
+}
+
+@media (min-width: 769px) {
+    .title1 h1 {
+        font-size: 60px; /* Larger title font size */
+    }
+
+    .image img {
+        width: 350px; /* Keep original image width */
+    }
+
+    .information1 h1,
+    .information1 h2,
+    .information1 h3 {
+        font-size: 35px; /* Original heading sizes */
+    }
+}

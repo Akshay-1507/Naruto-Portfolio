@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Naruto Theme</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/R.079a84f6406f864831d44b88187717cf?rik=KmjuV9I3Y5utcg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-RqHSVBFaSBg%2fTwfziLNUK9I%2fAAAAAAAAAkA%2fFG3uzopOlZs%2fs1600%2fNaruto%2bWallpapers%2bHD.jpg&ehk=LEHnQKJzzG0KPIyN5MZWPMxV607VptTYFLuVE%2fCrVhM%3d&risl=&pid=ImgRaw&r=0'); /* Naruto background */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            text-align: center;
+            color: #f9c74f; /* Yellow color for Naruto's theme */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #f9c74f; /* Naruto theme color */
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        input[type="submit"] {
+            background-color: #f9c74f; /* Naruto theme color */
+            color: #000;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            width: 100%; /* Make button full width */
+        }
+        input[type="submit"]:hover {
+            background-color: #e9c46a;
+        }
+        textarea {
+            resize: none;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                margin: 50px 20px; /* Reduce margin on smaller screens */
+                padding: 20px; /* Reduce padding for smaller screens */
+            }
+            h2 {
+                font-size: 24px; /* Smaller heading font size */
+            }
+            input[type="text"],
+            input[type="tel"],
+            textarea,
+            input[type="submit"] {
+                padding: 8px; /* Smaller padding for inputs */
+                font-size: 14px; /* Smaller font size for inputs */
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .container {
+                margin: 80px auto; /* Adjust margin for medium screens */
+                padding: 30px; /* Adjust padding for medium screens */
+            }
+            h2 {
+                font-size: 28px; /* Slightly larger heading font size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Me</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
